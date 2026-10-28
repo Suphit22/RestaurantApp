@@ -36,7 +36,10 @@ namespace RestaurantApp
 
         public Restaurant(int ID, string Name, string Type, double Rate)
         {
-
+            this.ID = id;
+            this.Name = name;
+            this.Type = type;
+            this.Rate = rate;
         }
     }
 }
