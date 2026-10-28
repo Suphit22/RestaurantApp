@@ -14,20 +14,29 @@ namespace RestaurantApp
             Console.WriteLine("Suphitsara");
             Console.WriteLine("Phichanin");
 
-
-            class Restaurant
+            List<Restaurant> restaurants = new List<Restaurant>
             {
-                 public string ID { get; set; }
-
-                  public string Name { get; set; }
-
-                   public string type { get; set; }
-
-                     public string score { get; set; }
-
-
+                new Restaurant(1, "Quanjude Roast Duck", "Beijing Cuisine", 4.5),
+                new Restaurant(2, "Donglaishun Hot Pot", "Hot Pot", 4.6),
+                new Restaurant(3, "Din Tai Fung", "Taiwanese Cuisine", 4.7)
+            };
 
         }
+
+    }
+    public class Restaurant
+    {
+        public string ID { get; set; }
+
+        public string Name { get; set; }
+
+        public string Type { get; set; }
+
+        public double Rate { get; set; }
+
+        public Restaurant(int ID, string Name, string Type, double Rate)
+        {
+
         }
     }
 }
